@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Styles-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Admin Dashboard</title>
+</head>
+<body >
+    <!-- header nav -->
+
+
+    <!-- Nav Menu -->
+    <nav id="navigation-menu">
+        <div class="logo-section">
+            <a href="index.html"><img src="assets/images/logo1.png" alt="logo"></a>
+            <a class="side-menu-btn-close side-menu-btn"><i class="fa-solid fa-xmark"></i></a>
+        </div>
+
+        <div class="menu-section">
+            <span>general</span>
+            <a href="#"><i class="fa-solid fa-table-cells-large"></i>&nbsp;Dashboard</a>
+            <a href="#"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Product</a>
+            <a href="#"><i class="fa-solid fa-chart-pie"></i>Inventory</a>
+            <a href="#"><i class="fa-regular fa-user"></i>&nbsp;Customers</a>
+            <a href="#"><i class="fa-regular fa-star"></i>Review</a>
+            <a href="#"><i class="fa-regular fa-credit-card"></i>Payment</a>
+            <a href="#"><i class="fa-solid fa-link"></i>Integration</a>
+        </div>
+        <div class="account-section">
+            <span>account</span>
+            <a href="#"><i class="fa-solid fa-gear"></i>&nbsp;Setting</a>
+            <a href="#"><i class="fa-regular fa-circle-question"></i>&nbsp;Help</a>
+            <a href="#"><i class="fa-solid fa-user-group"></i>Manage Users</a>
+        </div>
+        <div class="logout-section">
+            <a href="#"><i class="fa-solid fa-sign-out"></i>Logout</a>        
+        </div>
+    </nav>
+
+    <!-- dashboard -->
+    <section id="dashboard">
+        <div class="small-header">
+            <div class="side-menu-btn">
+                <a class="side-menu-btn-open"><i class="fa-solid fa-bars"></i></a>
+            </div>
+            <div class="search-section">
+                <i class="fa-solid fa-search"></i>
+                <input type="text" placeholder="Search" class="admin-search-input">
+            </div>
+            <div class="button-section">
+                <a href="#"><i class="fa-solid fa-bell"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#"><img src="assets/images/people/1.png" alt="acccount-photo" width="25px"></a>
+            </div>
+        </div>
+        <div class="hero-section">
+            <div class="gretting">
+                <h3>Welcome Back, Abdelhalim!</h3>
+                <p>Here's what happening with your store recently</p>
+            </div>
+            <div class="filter">
+                <select name="time-filter" id="time-filter">
+                    <option value="today">Today</option>
+                    <option value="yesterday">Yesterday</option>
+                    <option value="last-week" selected>Last Week</option>
+                    <option value="last-month">Last Month</option>
+                </select>
+                <button type="button" class="normal filter-button">View All Time</button>
+            </div>
+        </div>
+        <div class="overview-section">
+            <div class="overview-card card1">
+                <h6>Ecommerce Revenue</h6>
+                <h3>15,200 DA</h3>
+                <div class="changing-rate">
+                    
+                    <span class="changing-rate-percentage">20%</span>
+                </div>
+            </div>
+            <div class="overview-card card2">
+                <h6>New Customers</h6>
+                <h3>684</h3>
+                <div class="changing-rate">
+                    
+                    <span class="changing-rate-percentage">-8.6%</span>
+                </div>
+            </div>
+            <div class="overview-card card3">
+                <h6>Repeat Purchase Rate</h6>
+                <h3>75.12%</h3>
+                <div class="changing-rate">
+                    
+                    <span class="changing-rate-percentage">25.4%</span>
+                </div>
+            </div>
+            <div class="overview-card card4">
+                <h6>Avrage Order Value</h6>
+                <h3>2500 DA</h3>
+                <div class="changing-rate">
+                    
+                    <span class="changing-rate-percentage">35.2%</span>
+                </div>
+            </div>
+            <div class="overview-card card5">
+                <h6>New Customers</h6>
+                <h3>684</h3>
+                <div class="changing-rate">
+                    
+                    <span class="changing-rate-percentage">-12.42%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="summary-mostSeling">
+            <div class="summary">
+                <div>
+                    <h4>Summary</h4>
+                </div>
+            </div>
+            <div class="most-selling">
+                <div>
+                    <h4>Most Selling Products</h4>
+                </div>
+                <div class="product-short-card">
+                    <img src="assets/images/products/f1.jpg" alt="p1">
+                    <div class="prod-info">
+                        <span>
+                            <h6>Product Name</h6>
+                            <p>ID: 123456</p>
+                        </span>
+                    </div>
+                    <p class="sales-number">200 Sales</p>
+                </div>
+
+                <div class="product-short-card">
+                    <img src="assets/images/products/f2.jpg" alt="p1">
+                    <div class="prod-info">
+                        <span>
+                            <h6>Product Name</h6>
+                            <p>ID: 123456</p>
+                        </span>
+                    </div>
+                    <p class="sales-number">178 Sales</p>
+                </div>
+
+                <div class="product-short-card">
+                    <img src="assets/images/products/f3.jpg" alt="p1">
+                    <div class="prod-info">
+                        <span>
+                            <h6>Product Name</h6>
+                            <p>ID: 123456</p>
+                        </span>
+                    </div>
+                    <p class="sales-number">170 Sales</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="recent-orders-weekly-top-custmr">
+            <div class="recent-orders">
+                <div class="head">
+                    <h4>Recent Orders</h4>
+                    <button>View All</button>
+                </div>
+                <table>
+                    <tr>
+                        <th>Product</th>
+                        <th>Customer</th>
+                        <th>Order ID</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr class="order-container">
+                        <td class="product-column">
+                            <div>
+                                <img src="assets/images/products/f1.jpg" alt="p1">
+                            </div>
+                            <div>
+                                <span>Product Name</span>
+                            </div>
+                        </td>
+                        <td class="customer-column">Customer Name</td>
+                        <td class="orderID-column">#123456</td>
+                        <td class="orderDate-column">08 Aug 2024</td>
+                        <td class="orderStatus-column">
+                            <div class="status"><span>.</span>Delivered</div>
+                        </td>
+                    </tr>
+                    <tr class="order-container">
+                        <td class="product-column">
+                            <div>
+                                <img src="assets/images/products/f2.jpg" alt="p1">
+                            </div>
+                            <div>
+                                <span>Product Name</span>
+                            </div>
+                        </td>
+                        <td class="customer-column">Customer Name</td>
+                        <td class="orderID-column">#123456</td>
+                        <td class="orderDate-column">08 Aug 2024</td>
+                        <td class="orderStatus-column">
+                            <div class="status"><span>.</span>Cancelled</div>
+                        </td>
+                    </tr>
+                    <tr class="order-container">
+                        <td class="product-column">
+                            <div>
+                                <img src="assets/images/products/f3.jpg" alt="p1">
+                            </div>
+                            <div>
+                                <span>Product Name</span>
+                            </div>
+                        </td>
+                        <td class="customer-column">Customer Name</td>
+                        <td class="orderID-column">#123456</td>
+                        <td class="orderDate-column">08 Aug 2024</td>
+                        <td class="orderStatus-column">
+                            <div class="status"><span>.</span>Return</div>
+                        </td>
+                    </tr>
+                    <tr class="order-container">
+                        <td class="product-column">
+                            <div>
+                                <img src="assets/images/products/f3.jpg" alt="p1">
+                            </div>
+                            <div>
+                                <span>Product Name</span>
+                            </div>
+                        </td>
+                        <td class="customer-column">Customer Name</td>
+                        <td class="orderID-column">#123456</td>
+                        <td class="orderDate-column">08 Aug 2024</td>
+                        <td class="orderStatus-column">
+                            <div class="status"><span>.</span>Shipping</div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="top-costumers">
+                <div>
+                    <h4>Weekly top costumers</h4>
+                </div>
+                <div class="costumers-short-card">
+                    <img src="assets/images/people/1.png" alt="p1">
+                    <div class="cstmr-info">
+                        <span>
+                            <h6>Costumer Name</h6>
+                            <p><strong>25</strong> Order</p>
+                        </span>
+                    </div>
+                    <div>
+                        <button>View</button>
+                    </div>
+                </div>
+                <div class="costumers-short-card">
+                    <img src="assets/images/people/2.png" alt="p1">
+                    <div class="cstmr-info">
+                        <span>
+                            <h6>Costumer Name</h6>
+                            <p><strong>22</strong> Order</p>
+                        </span>
+                    </div>
+                    <div>
+                        <button>View</button>
+                    </div>
+                </div>
+                <div class="costumers-short-card">
+                    <img src="assets/images/people/3.png" alt="p1">
+                    <div class="cstmr-info">
+                        <span>
+                            <h6>Costumer Name</h6>
+                            <p><strong>19</strong> Order</p>
+                        </span>
+                    </div>
+                    <div>
+                        <button>View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- scripts -->
+    <script>
+        const changingRates = document.querySelectorAll('.changing-rate');
+        const changingRatePercentages = document.querySelectorAll('.changing-rate-percentage');
+
+        changingRatePercentages.forEach((rate, index) => {
+            const parentElement = changingRates[index];
+            if (rate.textContent.includes('-')) {
+                parentElement.style.color = 'red';
+                const downIcon = document.createElement('i');
+                downIcon.classList.add('fa-solid', 'far', 'fa-arrow-alt-circle-down');
+                parentElement.prepend(downIcon);
+            } else {
+                parentElement.style.color = 'green';
+                const upIcon = document.createElement('i');
+                upIcon.classList.add('fa-solid', 'far', 'fa-arrow-alt-circle-up');
+                parentElement.prepend(upIcon);
+            }
+        });
+
+        const orderStatus = document.querySelectorAll('.orderStatus-column');
+        const orderStatusDiv = document.querySelectorAll('.status');
+        orderStatus.forEach((status, index) => {
+            if (status.textContent.includes('Delivered')) {
+                orderStatus[index].style.color = '#23ce6a';
+                orderStatusDiv[index].style.backgroundColor = '#ebf4ef';
+            } else if (status.textContent.includes('Cancelled')) {
+                orderStatus[index].style.color = '#ec8f03';
+                orderStatusDiv[index].style.backgroundColor = '#f9e5d8';
+            } else if (status.textContent.includes('Return')) {
+                orderStatus[index].style.color = 'red';
+                orderStatusDiv[index].style.backgroundColor = '#fbebeb';
+            } else if (status.textContent.includes('Shipping')) {
+                orderStatus[index].style.color = 'blue';
+                orderStatusDiv[index].style.backgroundColor = '#c4d9f5';
+            }
+        });
+
+        const sideMenuBtnOpen=document.querySelector('.side-menu-btn-open');
+        const sideMenuBtnClose=document.querySelector('.side-menu-btn-close');
+        const navMenu=document.querySelector('#navigation-menu');
+        sideMenuBtnOpen.addEventListener('click',()=>{
+            navMenu.classList.add('active');
+        });
+        sideMenuBtnClose.addEventListener('click',()=>{
+            navMenu.classList.remove('active');
+        });
+    </script>
+</body>

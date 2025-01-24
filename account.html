@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Styles-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Account</title>
+</head>
+<body>
+
+    <!--Header-->
+    <section id="header">
+        <!--Logo width is 140px and height is 40px-->
+        <a href="index.html"><img src="assets/images/logo1.png" alt="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <li><a href="account.html" class="active"><i class="fa-regular fa-user"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="navigation-greet" class="section-p1">
+        <div class="navigation">
+            <a href="index.html" class="home">Home</a>
+            <span>/</span>
+            <a href="account.html" class="account">Account</a>
+        </div>
+        <div class="greet">
+            <h6>Welcome! <span>Mr. Abdelhalim</span></h6>
+        </div>
+    </section>
+
+    <!--Account-->
+    <section id="account" class="section-p1">
+        <div class="account-navigation">
+            <h6>Manage My Account</h6>
+            <a href="account.html" class="active">My Profile</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="address.html">Address Book</a>
+            <a href="payment.html">My Payment Options</a>
+            <h6>My Orders</h6>
+            <a href="orders.html">My Orders</a>
+            <a href="orders.html">My Cancellations</a>
+            <h6>Logout</h6>
+            <a href="logout.html">Logout</a>
+        </div>
+        <form class="preview-part" method="post">
+            <h3>Edit Your Profile</h3>
+            <div class="row">
+                <div class="col">
+                    <label for="fName">First Name</label>
+                    <input type="text" id="fName" name="fName" placeholder="Achour" class="edit-input">
+                </div>
+                <div class="col">
+                    <label for="lName">Last Name</label>
+                    <input type="text" id="lName" name="lName" placeholder="Abdelhalim" class="edit-input">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="example@email.com" class="edit-input">
+                </div>
+                <div class="col">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" placeholder="123st Tlemcen, Algeria" class="edit-input">
+                </div>
+            </div>
+
+            <div class="row pass-change">
+                <label for="newPassword">Password Changes</label>
+                <input type="password" id="oldPassword" name="oldPassword" placeholder="Enter Current password">
+                <input type="password" id="newPassword" name="newPassword" placeholder="Enter New password">
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm New password">
+            </div>
+            <div class="buttons-row">
+                <button type="reset" class="normal">Cancel</button>
+                <button type="submit" class="normal">Save Changes</button>
+            </div>
+        </form>
+    </section>
+    
+
+    <!--Footer-->
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="assets/images/logo1.png" alt="logo">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 1234 Street Name, Hennaya, Tlemcen, Algeria</p>
+            <p><strong>Phone:</strong> +213 123 456 789 / +213 123 456 789</p>
+            <p><strong>Email:</strong> example@email.com</p>
+            <p><strong>Hours:</strong> 08:00 - 18:00, Sat - Thu.</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="account.html">Account</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install Apps</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="assets/images/pay/app.jpg" alt="App Store">
+                <img src="assets/images/pay/play.jpg" alt="Google Play">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="assets/images/pay/pay.png" alt="Payment Gateways">
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 AFETOB. All rights reserved.</p>
+        </div>
+    </footer>
+    <!--Scripts-->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
